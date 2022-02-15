@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css" class="css">
+    <title>Movie Suggestions</title>
+</head>
+<body>
+    <main class="main">
+        <section class="search">
+            <h1>Start typing the name of the movie</h1>
+            <input class="search__input" type="text">
+            <ul class="search__suggestions">
+                <li class="search__option hidden">mock option</li>
+            </ul>
+        </section>
+        <section class="info">
+            <div class="img-container">
+                <img class="info__img hidden" src="" alt="movie poster">
+            </div>
+            <div class="info__text-data hidden">
+                <h2 class="info__title">Movie title</h2>
+                <p>Release date: <span class="info__release-date"></span></p>
+                <p>Rating: <span class="info__rating"></span></p>
+                <p class="info__overview"></p>
+            </div>
+        </section>
+        <section class="latest">
+            <h2>Recently searched movies</h2>
+            <ol class="latest__list">
+                <li class="latest__card hidden">
+                    <img src="" alt="poster of recently searched movie" class="card__img">
+                    <h3 class="card__title"></h3>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="footer__logo" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="tmdb logo">
+        This product uses the TMDB API but is not endorsed or certified by TMDB
+    </footer>
+    
+    <script>
+        const API_KEY = prompt('Please enter your IMDb API key');
+    </script>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
